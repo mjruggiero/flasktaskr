@@ -16,6 +16,25 @@ $ source ./venv/scripts/activate
 $ pip install -r requirements.txt
 ```
 
+### Setup
+
+Create the _config.py file in the project directory with the following content:
+```
+import os
+
+# grab the folder where this script lives
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+DATABASE = 'flasktakr.db'
+USERNAME = 'admin'
+PASSWORD = 'admin'
+WTF_CSRF_ENABLED = True
+SECRET_KEY = 'secret-key'
+
+# define the full path for the database
+DATABASE_PATH = os.path.join(basedir, DATABASE)
+```
+
 ### Run
 ```
 # Run the application
