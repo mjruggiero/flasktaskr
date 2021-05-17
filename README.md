@@ -38,5 +38,6 @@ DATABASE_PATH = os.path.join(basedir, DATABASE)
 ### Run
 ```
 # Run the application
-$ python blog.py
+$ cd project
+$ python run.py
 ```
